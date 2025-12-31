@@ -2,13 +2,20 @@
 
 11-11-IKS-env is a public-facing environment overview for 11/11 IKS (Integrated Key System) and related security architecture.
 
-This repository is intentionally non-implementing:
+This repository is intentionally **non-implementing**:
 - No production logic
 - No cryptographic implementations
 - No deployable code
 - No operational details
 
-It exists to provide a safe public view of the system boundaries, governance model and integration posture.
+It exists to provide a **safe public view** of the system boundaries, governance model and integration posture.
+
+
+
+ 11/11 IKS — Public Architecture (Non-Operational)
+
+External Systems → Context Request → Policy Gate → IKS Boundary → Audited Result → External Use  
+(interfaces only)     (labels only)    (rules only) (proprietary)   (traceable)     (consumer)
 
 
 
@@ -30,7 +37,7 @@ This enables controlled security at scale without exposing internal implementati
 
  Public Interface Philosophy (No Implementation Here)
 
-This repository describes integration boundaries only:
+This repository describes **integration boundaries only**:
 
 - External systems request key operations via context
 - Key operations are governed by policy
@@ -45,14 +52,5 @@ Nothing in this repository should be interpreted as production-ready or deployab
 
 All associated intellectual property, system designs and implementations are owned and stewarded by:
 
-11 AI Blockchain Developments LLC (Wyoming)
+11 AI Blockchain Developments
 
-See: `NOTICE.md`
-
-
-
- Request Access (Private Evaluation)
-
-If you are a qualified institution, partner, or buyer seeking a technical evaluation, request an authorized review channel.
-
-This public repository is for demonstration and governance visibility only.
